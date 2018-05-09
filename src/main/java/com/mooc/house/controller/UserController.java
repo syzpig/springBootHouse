@@ -11,15 +11,19 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 
-@RestController
+@Controller
 public class UserController {
 
-  @Autowired
-  private UserService userService;
+    @Autowired
+    private UserService userService;
 
-  @RequestMapping("msg")
-  public List<User> accountsRegister() {
-    return userService.getUsers();
-  }
+    @RequestMapping("msg")
+    public List<User> accountsRegister() {
+        return userService.getUsers();
+    }
 
+    @RequestMapping("index")
+    public String index() {
+        return "/homepage/index";
+    }
 }
