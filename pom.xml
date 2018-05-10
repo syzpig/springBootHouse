@@ -67,6 +67,12 @@
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
 
+		<!-- 第一步 用于创建演示httpclient这个对象自定义启步依赖全过程 为了方便在工程里直接引用，不会再单独打成包引用-->
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>

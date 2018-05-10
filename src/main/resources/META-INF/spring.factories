@@ -1,0 +1,9 @@
+
+#该配是第二种方式，非注解式配置，
+# springboot也会自动扫描到。好多springboot自带的启步依赖就是这种方式底层
+#第四步
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#com.mooc.house.autoconfig.HttpClientAutoConfiguration
+
+
+#第三种方式是。默认是只要加载类在启动类子包里，会自动加载带@Configuration的HttpClientAutoConfiguration自定义启步依赖

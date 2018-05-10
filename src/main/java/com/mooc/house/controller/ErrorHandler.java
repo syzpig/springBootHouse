@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- *添加freemark统一异常处理器
+ *添加freemark统一异常处理器  他会自动找到resource包下templates下的error文件里的静态文件
  */
 @ControllerAdvice
 public class ErrorHandler {
